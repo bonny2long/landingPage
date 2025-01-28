@@ -328,14 +328,6 @@ footer a:hover {
     flex-direction: column;
     gap: 30px;
 
-    .testimonial-cards {
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .testimonial-card {
-      width: 100%;
-    }
 
     .hero-text {
       width: 100%;
@@ -446,5 +438,21 @@ footer a:hover {
 
   #cta-form {
     width: 30%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  
+  .testimonial-cards {
+    flex-direction: column;  
+    gap: 20px;  
+    align-items: center; 
+  }
+
+  .testimonial-card {
+    width: 90%; 
+    padding: 15px;  
+    box-sizing: border-box;  
   }
 }
