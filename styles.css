@@ -310,61 +310,62 @@ footer a:hover {
   color: #00aaff;
 }
 
-
-
-
 /* Media Queries */
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
   #nav-bar {
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%; 
+    width: 100%;
   }
 
   .nav-link {
-    margin: 10px 0; 
+    margin: 10px 0;
   }
 
   .feature-grid {
-    flex-direction: column; 
-    gap: 30px; 
-
-  .testimonial-cards {
     flex-direction: column;
     gap: 30px;
-  }
 
-  .hero-text {
-    width: 100%;
-  }
+    .testimonial-cards {
+      flex-direction: column;
+      gap: 20px;
+    }
 
-  .hero-image img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+    .testimonial-card {
+      width: 100%;
+    }
 
-  #header-img {
-    width: 80px; 
-  }
+    .hero-text {
+      width: 100%;
+    }
 
-  footer {
-    font-size: 14px;
+    .hero-image img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    #header-img {
+      width: 80px;
+    }
+
+    footer {
+      font-size: 14px;
+    }
   }
-}
 }
 
 @media (min-width: 481px) and (max-width: 600px) {
   #nav-bar {
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
 
   .feature-grid {
-    flex-direction: column; 
+    flex-direction: column;
     gap: 30px;
   }
 
@@ -374,14 +375,14 @@ footer a:hover {
   }
 }
 
-@media (min-width: 601px) and (max-width: 900px) { 
+@media (min-width: 601px) and (max-width: 900px) {
   .feature-grid {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .feature {
-    width: 48%; 
+    width: 48%;
   }
 
   .testimonial-cards {
@@ -390,7 +391,7 @@ footer a:hover {
   }
 
   .testimonial-card {
-    width: 48%; 
+    width: 48%;
   }
 
   #cta-form {
@@ -398,7 +399,8 @@ footer a:hover {
   }
 }
 
-@media (min-width: 901px) and (max-width: 1200px) { /* Large (lg) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  /* Large (lg) */
   .feature-grid {
     flex-direction: row;
     justify-content: space-between;
@@ -422,7 +424,8 @@ footer a:hover {
   }
 }
 
-@media (min-width: 1201px) { /* Extra Large (xl) */
+@media (min-width: 1201px) {
+  /* Extra Large (xl) */
   .feature-grid {
     flex-direction: row;
     justify-content: space-between;
